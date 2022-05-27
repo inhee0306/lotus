@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>부여 가을연꽃축제</title>
-<script src="js/jquery-1.12.3.js"></script>
-<script src="js/index.js"></script>
-<link rel="stylesheet" href="css/index.css">
+	<meta charset="utf-8">
+	<title>부여 가을연꽃축제</title>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/lotus.js"></script>
+	<link rel="stylesheet" href="css/lotus.css">
 </head>
 <body>
-
 	<div id="layout">
-		<header id="left">
+		<header  id="left">
 			<a href="#"><img src="images/logo.png" alt="로고"></a>
 			<nav>
-				<ul>
+				<ul>				
 					<li>
 						<a href="#">축제소개</a>
 						<nav>
@@ -43,7 +42,7 @@
 						<a href="#">참여마당</a>
 						<nav>
 							<a href="#">참가후기</a>
-							<a href="#">포토갤러리</a>
+							<a href="#"  class="last">포토갤러리</a>
 						</nav>
 					</li>
 				</ul>
@@ -51,15 +50,21 @@
 		</header>
 		<div id="right">
 			<div id="slide">
-				<a href="#"><img src="images/slide3.jpg" alt="슬라이드3"></a>
+			
+				<!-- index 0 ; eq(0)  -->
+				<a href="#"><img src="images/slide3.jpg" alt="슬라이드3"></a> 
+				
+				<!-- index 1 ; eq(1)  -->
 				<a href="#"><img src="images/slide2.jpg" alt="슬라이드2"></a>
+				
+				<!-- index 2 ; eq(2)  -->
 				<a href="#"><img src="images/slide1.jpg" alt="슬라이드1"></a>
-			</div>		
+			</div>
 			<main>
 				<section id="notice">
 					<h2>공지사항</h2>
 					<hr>
-					<ul>
+					<ol>
 						<li>
 							<a href="#" class="pop">연꽃과 음식 이야기</a>
 							<span>2020.03.14</span>
@@ -76,7 +81,7 @@
 							<a href="#">건강에 좋은 음식</a>
 							<span>2020.03.14</span>
 						</li>
-					</ul>
+					</ol>
 				</section>
 				<section id="gallery">
 					<h2>갤러리</h2>
@@ -90,7 +95,7 @@
 				<section id="banner">
 					<h2>배너</h2>
 					<a href="#"><img src="images/banner.jpg" alt="바로가기"></a>
-				</section>			
+				</section>
 			</main>
 			<footer>
 				<p>COPYRIGHT ⓒby WEBDESIGN. ALL RIGHTS RESERVED</p>
@@ -98,12 +103,12 @@
 					<p>
 						<a href="#"><img src="images/sns1.jpg" alt="페이스북으로 이동"></a>
 						<a href="#"><img src="images/sns2.jpg" alt="트위터로 이동"></a>
-						<a href="#"><img src="images/sns3.jpg" alt="인스타그램으로 이동"></a>
+						<a href="#"><img src="images/sns3.jpg" alt="인스타그램으로 이동"></a>						
 					</p>
 					<select>
 						<option value="#">패밀리사이트1</option>
 						<option value="#">패밀리사이트2</option>
-						<option value="#">패밀리사이트3</option>
+						<option value="#">패밀리사이트3</option>						
 					</select>
 				</div>
 			</footer>
@@ -112,9 +117,9 @@
 		<section id="popup">
 			<h3>공지사항</h3>
 			<p>연꽃과 음식 이야기 관련 책자는 안내 사무실에서 받아가세요.</p>
-			<button type="button">닫기</button>
-		</section>		
+			<button type="button" tabindex="22">닫기</button>
+		</section>
+		
 	</div>
-	
 </body>
 </html>
